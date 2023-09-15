@@ -26,7 +26,7 @@ import androidx.work.testing.SynchronousExecutor
 import androidx.work.testing.TestListenableWorkerBuilder
 import androidx.work.testing.WorkManagerTestInitHelper
 import androidx.work.workDataOf
-import appsgenz.template.utilities.PLANT_DATA_FILENAME
+import appsgenz.template.PLANT_DATA_FILENAME
 import appsgenz.template.workers.SeedDatabaseWorker
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
