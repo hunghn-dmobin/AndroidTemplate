@@ -20,8 +20,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import appsgenz.template.data.UnsplashPhoto
-import appsgenz.template.data.UnsplashRepository
+import appsgenz.template.data.models.UnsplashPhoto
+import appsgenz.template.data.repositories.UnsplashRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

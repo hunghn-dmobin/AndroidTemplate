@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import appsgenz.template.screens.HomeViewPagerFragmentDirections
 import appsgenz.template.screens.PlantListFragment
-import appsgenz.template.data.Plant
+import appsgenz.template.data.entities.Plant
 import appsgenz.template.databinding.ListItemPlantBinding
 
 /**

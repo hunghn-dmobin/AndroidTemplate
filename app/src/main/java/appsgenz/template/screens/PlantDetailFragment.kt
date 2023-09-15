@@ -30,7 +30,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import appsgenz.template.R
 import appsgenz.template.base.BaseAppFragment
-import appsgenz.template.data.Plant
+import appsgenz.template.data.entities.Plant
 import appsgenz.template.databinding.FragmentPlantDetailBinding
 import appsgenz.template.screens.PlantDetailFragment.Callback
 import appsgenz.template.viewmodels.PlantDetailViewModel

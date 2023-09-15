@@ -31,7 +31,7 @@ import appsgenz.template.screens.PhotoViewFragment
 import appsgenz.template.screens.PhotoViewFragmentArgs
 import appsgenz.template.R
 import appsgenz.template.adapters.GalleryAdapter.GalleryViewHolder
-import appsgenz.template.data.UnsplashPhoto
+import appsgenz.template.data.models.UnsplashPhoto
 import appsgenz.template.databinding.ListItemPhotoBinding
 
 /**

@@ -21,8 +21,8 @@ import android.content.Intent
 import androidx.appcompat.widget.Toolbar
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasAction
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasExtra
-import appsgenz.template.data.GardenPlanting
-import appsgenz.template.data.Plant
+import appsgenz.template.data.entities.GardenPlanting
+import appsgenz.template.data.entities.Plant
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.allOf

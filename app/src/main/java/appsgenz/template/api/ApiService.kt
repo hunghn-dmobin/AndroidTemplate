@@ -17,7 +17,7 @@
 package appsgenz.template.api
 
 import appsgenz.template.BuildConfig
-import appsgenz.template.data.UnsplashSearchResponse
+import appsgenz.template.data.models.UnsplashSearchResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import okhttp3.logging.HttpLoggingInterceptor.Level
@@ -29,7 +29,7 @@ import retrofit2.http.Query
 /**
  * Used to connect to the Unsplash API to fetch photos
  */
-interface UnsplashService {
+interface ApiService {
 
     @GET("search/photos")
     suspend fun searchPhotos(
@@ -42,7 +42,7 @@ interface UnsplashService {
     companion object {
         private const val BASE_URL = "https://api.unsplash.com/"
 
-        fun create(): UnsplashService {
+        fun create(): ApiService {
             val logger = HttpLoggingInterceptor().apply { level = Level.BASIC }
 
             val client = OkHttpClient.Builder()
@@ -54,7 +54,7 @@ interface UnsplashService {
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-                .create(UnsplashService::class.java)
+                .create(ApiService::class.java)
         }
     }
 }

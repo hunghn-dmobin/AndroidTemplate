@@ -22,8 +22,8 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import appsgenz.template.BuildConfig
 import appsgenz.template.screens.PlantDetailFragment
-import appsgenz.template.data.GardenPlantingRepository
-import appsgenz.template.data.PlantRepository
+import appsgenz.template.data.repositories.GardenPlantingRepository
+import appsgenz.template.data.repositories.PlantRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

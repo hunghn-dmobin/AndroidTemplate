@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.repositories
 
+import appsgenz.template.data.dao.GardenPlantingDao
+import appsgenz.template.data.entities.GardenPlanting
 import javax.inject.Inject
 import javax.inject.Singleton
 

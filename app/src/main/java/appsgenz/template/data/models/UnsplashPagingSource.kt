@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.models
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import appsgenz.template.DEFAULT_PAGE
-import appsgenz.template.api.UnsplashService
+import appsgenz.template.api.ApiService
 
 class UnsplashPagingSource(
-    private val service: UnsplashService,
+    private val service: ApiService,
     private val query: String
 ) : PagingSource<Int, UnsplashPhoto>() {
 

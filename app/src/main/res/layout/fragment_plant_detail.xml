@@ -19,7 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="appsgenz.template.data.Plant"/>
+        <import type="appsgenz.template.data.entities.Plant"/>
         <variable
             name="viewModel"
             type="appsgenz.template.viewmodels.PlantDetailViewModel" />

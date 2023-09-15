@@ -16,6 +16,7 @@
 
 package appsgenz.template.data
 
+import appsgenz.template.data.entities.GardenPlanting
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Assert.assertEquals

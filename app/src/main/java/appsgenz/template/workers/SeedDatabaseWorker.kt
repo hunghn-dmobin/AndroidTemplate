@@ -24,7 +24,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 import appsgenz.template.data.AppDatabase
-import appsgenz.template.data.Plant
+import appsgenz.template.data.entities.Plant
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

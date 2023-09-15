@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

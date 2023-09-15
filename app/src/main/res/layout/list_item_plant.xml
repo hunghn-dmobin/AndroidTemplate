@@ -24,7 +24,7 @@
             type="android.view.View.OnClickListener"/>
         <variable
             name="plant"
-            type="appsgenz.template.data.Plant"/>
+            type="appsgenz.template.data.entities.Plant"/>
     </data>
 
     <appsgenz.template.views.MaskedCardView

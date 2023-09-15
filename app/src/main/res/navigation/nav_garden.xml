@@ -71,7 +71,7 @@
         tools:layout="@layout/fragment_photo_view">
         <argument
             android:name="photoKey"
-            app:argType="appsgenz.template.data.UnsplashPhoto" />
+            app:argType="appsgenz.template.data.models.UnsplashPhoto" />
     </fragment>
 
 </navigation>

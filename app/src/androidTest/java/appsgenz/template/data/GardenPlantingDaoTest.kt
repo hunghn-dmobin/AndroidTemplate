@@ -20,6 +20,8 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import androidx.test.platform.app.InstrumentationRegistry
+import appsgenz.template.data.dao.GardenPlantingDao
+import appsgenz.template.data.entities.GardenPlanting
 import appsgenz.template.utilities.testCalendar
 import appsgenz.template.utilities.testGardenPlanting
 import appsgenz.template.utilities.testPlant

@@ -18,8 +18,8 @@ package appsgenz.template.di
 
 import android.content.Context
 import appsgenz.template.data.AppDatabase
-import appsgenz.template.data.GardenPlantingDao
-import appsgenz.template.data.PlantDao
+import appsgenz.template.data.dao.GardenPlantingDao
+import appsgenz.template.data.dao.PlantDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

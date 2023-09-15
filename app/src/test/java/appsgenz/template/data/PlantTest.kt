@@ -16,6 +16,7 @@
 
 package appsgenz.template.data
 
+import appsgenz.template.data.entities.Plant
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

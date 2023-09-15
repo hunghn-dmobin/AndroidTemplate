@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import appsgenz.template.data.entities.Plant
 import kotlinx.coroutines.flow.Flow
 
 /**

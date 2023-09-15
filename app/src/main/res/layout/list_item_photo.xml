@@ -24,7 +24,7 @@
             type="android.view.View.OnClickListener"/>
         <variable
             name="photo"
-            type="appsgenz.template.data.UnsplashPhoto"/>
+            type="appsgenz.template.data.models.UnsplashPhoto"/>
     </data>
 
     <appsgenz.template.views.MaskedCardView

@@ -14,26 +14,25 @@
  * limitations under the License.
  */
 
-package appsgenz.template.viewmodels
+package appsgenz.template.data.repositories
 
-import androidx.lifecycle.SavedStateHandle
-import androidx.lifecycle.ViewModel
-import appsgenz.template.data.models.UnsplashPhoto
-import dagger.hilt.android.lifecycle.HiltViewModel
+import appsgenz.template.data.dao.PlantDao
 import javax.inject.Inject
-import appsgenz.template.screens.PhotoViewFragment
+import javax.inject.Singleton
 
 /**
- * The ViewModel used in [PhotoViewFragment].
+ * Repository module for handling data operations.
+ *
+ * Collecting from the Flows in [PlantDao] is main-safe.  Room supports Coroutines and moves the
+ * query execution off of the main thread.
  */
-@HiltViewModel
-class PhotoViewModel @Inject constructor(
-    savedStateHandle: SavedStateHandle
-) : ViewModel() {
+@Singleton
+class PlantRepository @Inject constructor(private val plantDao: PlantDao) {
 
-    val photo: UnsplashPhoto = savedStateHandle.get<UnsplashPhoto>(PHOTO_SAVED_STATE_KEY)!!
+    fun getPlants() = plantDao.getPlants()
 
-    companion object {
-        private const val PHOTO_SAVED_STATE_KEY = "photoKey"
-    }
+    fun getPlant(plantId: String) = plantDao.getPlant(plantId)
+
+    fun getPlantsWithGrowZoneNumber(growZoneNumber: Int) =
+        plantDao.getPlantsWithGrowZoneNumber(growZoneNumber)
 }

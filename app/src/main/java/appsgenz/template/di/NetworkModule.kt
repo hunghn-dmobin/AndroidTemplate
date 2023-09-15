@@ -16,7 +16,7 @@
 
 package appsgenz.template.di
 
-import appsgenz.template.api.UnsplashService
+import appsgenz.template.api.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,7 +29,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideUnsplashService(): UnsplashService {
-        return UnsplashService.create()
+    fun provideApiService(): ApiService {
+        return ApiService.create()
     }
 }

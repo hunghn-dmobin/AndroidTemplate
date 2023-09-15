@@ -14,24 +14,21 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.entities
 
-import javax.inject.Inject
-import javax.inject.Singleton
+import androidx.room.Embedded
+import androidx.room.Relation
+import appsgenz.template.data.entities.GardenPlanting
+import appsgenz.template.data.entities.Plant
 
 /**
- * Repository module for handling data operations.
- *
- * Collecting from the Flows in [PlantDao] is main-safe.  Room supports Coroutines and moves the
- * query execution off of the main thread.
+ * This class captures the relationship between a [Plant] and a user's [GardenPlanting], which is
+ * used by Room to fetch the related entities.
  */
-@Singleton
-class PlantRepository @Inject constructor(private val plantDao: PlantDao) {
+data class PlantAndGardenPlantings(
+    @Embedded
+    val plant: Plant,
 
-    fun getPlants() = plantDao.getPlants()
-
-    fun getPlant(plantId: String) = plantDao.getPlant(plantId)
-
-    fun getPlantsWithGrowZoneNumber(growZoneNumber: Int) =
-        plantDao.getPlantsWithGrowZoneNumber(growZoneNumber)
-}
+    @Relation(parentColumn = "id", entityColumn = "plant_id")
+    val gardenPlantings: List<GardenPlanting> = emptyList()
+)

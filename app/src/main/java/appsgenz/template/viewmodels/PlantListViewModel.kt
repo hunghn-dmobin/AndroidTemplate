@@ -22,8 +22,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import appsgenz.template.screens.PlantListFragment
-import appsgenz.template.data.Plant
-import appsgenz.template.data.PlantRepository
+import appsgenz.template.data.entities.Plant
+import appsgenz.template.data.repositories.PlantRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest

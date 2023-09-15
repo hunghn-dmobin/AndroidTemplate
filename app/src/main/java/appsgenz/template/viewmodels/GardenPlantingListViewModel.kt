@@ -19,8 +19,8 @@ package appsgenz.template.viewmodels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import appsgenz.template.data.GardenPlantingRepository
-import appsgenz.template.data.PlantAndGardenPlantings
+import appsgenz.template.data.repositories.GardenPlantingRepository
+import appsgenz.template.data.entities.PlantAndGardenPlantings
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -19,7 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="appsgenz.template.data.UnsplashPhoto"/>
+        <import type="appsgenz.template.data.models.UnsplashPhoto"/>
         <variable
             name="viewModel"
             type="appsgenz.template.viewmodels.PhotoViewModel" />

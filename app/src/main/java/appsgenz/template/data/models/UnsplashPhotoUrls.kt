@@ -14,26 +14,20 @@
  * limitations under the License.
  */
 
-package appsgenz.template.data
+package appsgenz.template.data.models
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 /**
- * Data class that represents a user from Unsplash.
+ * Data class that represents URLs available for a Unsplash photo.
  *
- * Not all of the fields returned from the API are represented here; only the ones used in this
- * project are listed below. For a full list of fields, consult the API documentation
- * [here](https://unsplash.com/documentation#get-a-users-public-profile).
+ * Although several photo sizes are available, this project uses only uses the `small` sized photo.
+ * For more details, consult the API documentation
+ * [here](https://unsplash.com/documentation#example-image-use).
  */
 @Parcelize
-data class UnsplashUser(
-    @field:SerializedName("name") val name: String,
-    @field:SerializedName("username") val username: String
-) : Parcelable {
-    val attributionUrl: String
-        get() {
-            return "https://unsplash.com/$username?utm_source=sunflower&utm_medium=referral"
-        }
-}
+data class UnsplashPhotoUrls(
+    @field:SerializedName("small") val small: String
+) : Parcelable

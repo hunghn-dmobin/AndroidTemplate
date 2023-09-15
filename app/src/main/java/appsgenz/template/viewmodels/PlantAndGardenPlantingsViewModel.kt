@@ -16,7 +16,7 @@
 
 package appsgenz.template.viewmodels
 
-import appsgenz.template.data.PlantAndGardenPlantings
+import appsgenz.template.data.entities.PlantAndGardenPlantings
 import java.text.SimpleDateFormat
 import java.util.Locale
 
