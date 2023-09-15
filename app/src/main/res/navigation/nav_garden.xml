@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/view_pager_fragment"
-        android:name="com.google.samples.apps.sunflower.HomeViewPagerFragment"
+        android:name="appsgenz.template.screens.HomeViewPagerFragment"
         tools:layout="@layout/fragment_view_pager">
 
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/plant_detail_fragment"
-        android:name="com.google.samples.apps.sunflower.PlantDetailFragment"
+        android:name="appsgenz.template.screens.PlantDetailFragment"
         android:label="@string/plant_details_title"
         tools:layout="@layout/fragment_plant_detail">
 
@@ -54,7 +54,7 @@
 
     <fragment
         android:id="@+id/gallery_fragment"
-        android:name="com.google.samples.apps.sunflower.GalleryFragment"
+        android:name="appsgenz.template.screens.GalleryFragment"
         android:label="@string/plant_details_title"
         tools:layout="@layout/fragment_gallery">
         <argument
@@ -66,12 +66,12 @@
     </fragment>
     <fragment
         android:id="@+id/photo_view_fragment"
-        android:name="com.google.samples.apps.sunflower.PhotoViewFragment"
+        android:name="appsgenz.template.screens.PhotoViewFragment"
         android:label="@string/galley_detail"
         tools:layout="@layout/fragment_photo_view">
         <argument
             android:name="photoKey"
-            app:argType="com.google.samples.apps.sunflower.data.UnsplashPhoto" />
+            app:argType="appsgenz.template.data.UnsplashPhoto" />
     </fragment>
 
 </navigation>

@@ -24,10 +24,10 @@
             type="android.view.View.OnClickListener"/>
         <variable
             name="viewModel"
-            type="com.google.samples.apps.sunflower.viewmodels.PlantAndGardenPlantingsViewModel"/>
+            type="appsgenz.template.viewmodels.PlantAndGardenPlantingsViewModel"/>
     </data>
 
-    <com.google.samples.apps.sunflower.views.MaskedCardView
+    <appsgenz.template.views.MaskedCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/card_side_margin"
@@ -36,7 +36,7 @@
         android:onClick="@{clickListener}"
         app:cardElevation="@dimen/card_elevation"
         app:cardPreventCornerOverlap="false"
-        app:shapeAppearanceOverlay="@style/ShapeAppearance.Sunflower.Card">
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.Card">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -133,6 +133,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.google.samples.apps.sunflower.views.MaskedCardView>
+    </appsgenz.template.views.MaskedCardView>
 
 </layout>

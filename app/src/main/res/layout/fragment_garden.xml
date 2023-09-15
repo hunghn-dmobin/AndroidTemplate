@@ -65,7 +65,7 @@
                 android:textColor="?attr/colorPrimary"
                 android:text="@string/add_plant"
                 app:backgroundTint="?attr/colorOnPrimary"
-                app:shapeAppearance="@style/ShapeAppearance.Sunflower.Button.Add"/>
+                app:shapeAppearance="@style/ShapeAppearance.MyApp.Button.Add"/>
 
         </LinearLayout>
 

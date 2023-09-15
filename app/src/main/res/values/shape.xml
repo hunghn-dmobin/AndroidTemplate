@@ -17,7 +17,7 @@
 
 <resources>
 
-    <style name="ShapeAppearance.Sunflower.Card" parent="ShapeAppearance.MaterialComponents">
+    <style name="ShapeAppearance.MyApp.Card" parent="ShapeAppearance.MaterialComponents">
         <item name="cornerFamily">rounded</item>
 
         <item name="cornerSizeTopLeft">0dp</item>
@@ -26,7 +26,7 @@
         <item name="cornerSizeBottomLeft">@dimen/card_corner_radius</item>
     </style>
 
-    <style name="ShapeAppearance.Sunflower.Button.Add" parent="ShapeAppearance.MaterialComponents">
+    <style name="ShapeAppearance.MyApp.Button.Add" parent="ShapeAppearance.MaterialComponents">
         <item name="cornerFamily">rounded</item>
 
         <item name="cornerSizeTopLeft">0dp</item>
@@ -36,7 +36,7 @@
     </style>
 
     <style
-        name="ShapeAppearance.Sunflower.FAB"
+        name="ShapeAppearance.MyApp.FAB"
         parent="ShapeAppearance.MaterialComponents.SmallComponent" />
 
     <!-- Add plant button -->

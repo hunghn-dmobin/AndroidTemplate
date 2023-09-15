@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
-            android:theme="@style/Theme.Sunflower.AppBarOverlay">
+            android:theme="@style/Theme.MyApp.AppBarOverlay">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
@@ -50,7 +50,7 @@
             android:paddingTop="@dimen/gallery_header_margin"
             app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
             app:spanCount="@integer/grid_columns"
-            tools:context="com.google.samples.apps.sunflower.GardenActivity"
+            tools:context="appsgenz.template.activities.HomeActivity"
             tools:listitem="@layout/list_item_photo"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

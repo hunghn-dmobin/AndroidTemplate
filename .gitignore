@@ -1,6 +1,7 @@
 *.iml
 .gradle
 /local.properties
+/.idea
 .idea/*
 !.idea/copyright
 .DS_Store
@@ -8,3 +9,4 @@
 /captures
 .externalNativeBuild
 ktlint
+/gradle/

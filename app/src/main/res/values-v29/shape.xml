@@ -17,7 +17,7 @@
 
 <resources>
 
-    <style name="ShapeAppearance.Sunflower.FAB" parent="ShapeAppearance.MaterialComponents">
+    <style name="ShapeAppearance.MyApp.FAB" parent="ShapeAppearance.MaterialComponents">
         <item name="cornerFamily">rounded</item>
 
         <item name="cornerSizeTopLeft">0dp</item>

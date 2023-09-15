@@ -81,11 +81,11 @@
   },
   {
     "plantId": "helianthus-annuus",
-    "name": "Sunflower",
-    "description": "Roses are red<br>Violets are blue<br>Sunflowers have seeds<br>That folks love to chew<br><br>- M.G., 2018<br><br>Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits. This sunflower species is also used as wild bird food, as livestock forage (as a meal or a silage plant), in some industrial applications, and as an ornamental in domestic gardens. The plant was first domesticated in the Americas. Wild Helianthus annuus is a widely branched annual plant with many flower heads. The domestic sunflower, however, often possesses only a single large inflorescence (flower head) atop an unbranched stem. The name sunflower may derive from the flower's head's shape, which resembles the sun, or from the impression that the blooming plant appears to slowly turn its flower towards the sun as the latter moves across the sky on a daily basis.<br><br>Sunflower seeds were brought to Europe from the Americas in the 16th century, where, along with sunflower oil, they became a widespread cooking ingredient.<br><br>(From <a href=\"https://en.wikipedia.org/wiki/Helianthus_annuus\">Wikipedia</a>)",
+    "name": "MyApp",
+    "description": "Roses are red<br>Violets are blue<br>MyApps have seeds<br>That folks love to chew<br><br>- M.G., 2018<br><br>Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits. This sunflower species is also used as wild bird food, as livestock forage (as a meal or a silage plant), in some industrial applications, and as an ornamental in domestic gardens. The plant was first domesticated in the Americas. Wild Helianthus annuus is a widely branched annual plant with many flower heads. The domestic sunflower, however, often possesses only a single large inflorescence (flower head) atop an unbranched stem. The name sunflower may derive from the flower's head's shape, which resembles the sun, or from the impression that the blooming plant appears to slowly turn its flower towards the sun as the latter moves across the sky on a daily basis.<br><br>MyApp seeds were brought to Europe from the Americas in the 16th century, where, along with sunflower oil, they became a widespread cooking ingredient.<br><br>(From <a href=\"https://en.wikipedia.org/wiki/Helianthus_annuus\">Wikipedia</a>)",
     "growZoneNumber": 8,
     "wateringInterval": 3,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sunflowers_in_field_flower.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/MyApps_in_field_flower.jpg"
   },
   {
     "plantId": "citrullus-lanatus",

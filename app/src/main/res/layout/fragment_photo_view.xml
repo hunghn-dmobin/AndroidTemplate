@@ -19,10 +19,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="com.google.samples.apps.sunflower.data.UnsplashPhoto"/>
+        <import type="appsgenz.template.data.UnsplashPhoto"/>
         <variable
             name="viewModel"
-            type="com.google.samples.apps.sunflower.viewmodels.PhotoViewModel" />
+            type="appsgenz.template.viewmodels.PhotoViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -30,7 +30,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:background="?attr/colorSurface"
-        tools:context="com.google.samples.apps.sunflower.GardenActivity"
+        tools:context="appsgenz.template.activities.HomeActivity"
         tools:ignore="MergeRootFrame">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -38,13 +38,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
-            android:theme="@style/Theme.Sunflower.AppBarOverlay">
+            android:theme="@style/Theme.MyApp.AppBarOverlay">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:navigationIcon="@drawable/ic_detail_back_no_circle"
+                app:titleCentered="true"
                 tools:title="@string/galley_detail"
                 app:title="@{viewModel.photo.id}" />
 

@@ -44,5 +44,6 @@
 
     <!-- Accessibility -->
     <string name="a11y_plant_item_image">গাছের ছবি</string>
+    <string name="ok">ok</string>
 
 </resources>

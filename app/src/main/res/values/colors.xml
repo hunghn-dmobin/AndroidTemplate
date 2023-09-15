@@ -16,14 +16,16 @@
   -->
 
 <resources>
-    <color name="sunflower_black">#de000000</color>
-    <color name="sunflower_gray_50">#fafafa</color>
-    <color name="sunflower_gray_50_a600">#99fafafa</color>
-    <color name="sunflower_green_300">#6dc790</color>
-    <color name="sunflower_green_500">#49bb79</color>
-    <color name="sunflower_green_700">#005d2b</color>
-    <color name="sunflower_green_900">#1a231e</color>
-    <color name="sunflower_white">#deffffff</color>
-    <color name="sunflower_yellow_300">#f8f99f</color>
-    <color name="sunflower_yellow_500">#ffff63</color>
+    <color name="app_black">#de000000</color>
+    <color name="app_gray_50">#fafafa</color>
+    <color name="app_gray_50_a600">#99fafafa</color>
+    <color name="app_green_300">#6dc790</color>
+    <color name="app_green_500">#49bb79</color>
+    <color name="app_green_700">#005d2b</color>
+    <color name="app_green_900">#1a231e</color>
+    <color name="app_white">#deffffff</color>
+    <color name="app_yellow_300">#f8f99f</color>
+    <color name="app_yellow_500">#ffff63</color>
+
+    <color name="background_loading">#80ffffff</color>
 </resources>

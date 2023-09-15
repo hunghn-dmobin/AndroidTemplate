@@ -1,14 +1,9 @@
-Android Sunflower
+AppsGenz starter template
 =================
 
 A gardening app illustrating Android development best practices with Android Jetpack.
 
-Android Sunflower is currently under heavy development.
-Note that some changes (such as database schema modifications) are not backwards
-compatible and may cause the app to crash. In this
-case, please uninstall and re-install the app.
-
-**Note**: The `views` branch contains the original Android View implementation of Sunflower. This branch was created after part of the UI in Sunflower was migrated to Compose and merged into `main` (done in [PR #769](https://github.com/android/sunflower/pull/769)).
+This template is compatible with the latest stable version of Android Studio.
 
 Introduction
 ------------
@@ -19,10 +14,30 @@ categories:
 
 ![Android Jetpack](screenshots/jetpack_donut.png "Android Jetpack Components")
 
-Android Sunflower demonstrates utilizing these components to create a simple gardening app.
+Android MyApp demonstrates utilizing these components to create a simple gardening app.
 Read the
-[Introducing Android Sunflower](https://medium.com/androiddevelopers/introducing-android-sunflower-e421b43fe0c2)
+[Introducing Android MyApp](https://medium.com/androiddevelopers/introducing-android-sunflower-e421b43fe0c2)
 article for a walkthrough of the app.
+
+## Usage
+
+1. Clone this branch
+
+```
+git clone https://git.dmobin.studio/mobile-app/androidkotlinapp
+```
+
+2. Run the customizer script:
+
+```
+chmod +x ./customizer.sh
+```
+
+```
+./customizer.sh your.package.name [MyApplication]
+```
+
+Where `your.package.name` is your app ID (should be lowercase). You can add an optional application name.
 
 Getting Started
 ---------------
@@ -39,7 +54,7 @@ For more resources on learning Android development, visit the
 
 ### Unsplash API key
 
-Sunflower uses the [Unsplash API](https://unsplash.com/developers) to load pictures on the gallery
+MyApp uses the [Unsplash API](https://unsplash.com/developers) to load pictures on the gallery
 screen. To use the API, you will need to obtain a free developer API key. See the
 [Unsplash API Documentation](https://unsplash.com/documentation) for instructions.
 
@@ -107,20 +122,12 @@ Libraries Used
 [92]: https://developer.android.com/training/dependency-injection/hilt-android
 [93]: https://developer.android.com/training/dependency-injection
 
-Upcoming features
------------------
-Updates will include incorporating additional Jetpack components and updating existing components
-as the component libraries evolve.
-
-Interested in seeing a particular feature of the Android Framework or Jetpack implemented in this
-app? Please open a new [issue](https://github.com/android/sunflower/issues).
-
 Android Studio IDE setup
 ------------------------
 For development, the latest version of Android Studio is required. The latest version can be
 downloaded from [here](https://developer.android.com/studio/).
 
-Sunflower uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
+MyApp uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
 Here's how to configure it for use with Android Studio (instructions adapted
 from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)):
 
@@ -134,29 +141,11 @@ from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)
 
 Additional resources
 --------------------
-Check out these Wiki pages to learn more about Android Sunflower:
+Check out these Wiki pages to learn more about Android MyApp:
 
 - [Notable Community Contributions](https://github.com/android/sunflower/wiki/Notable-Community-Contributions)
 
 - [Publications](https://github.com/android/sunflower/wiki/Sunflower-Publications)
-
-Non-Goals
----------
-The focus of this project is on Android Jetpack and the Android framework.
-Thus, there are no immediate plans to implement features outside of this scope.
-
-Support
--------
-
-- Stack Overflow:
-  - https://stackoverflow.com/questions/tagged/android
-  - https://stackoverflow.com/questions/tagged/android-jetpack
-
-If you've found an error in this sample, please file an issue:
-https://github.com/android/sunflower/issues
-
-Patches are encouraged, and may be submitted by forking this project and submitting a pull request
-through GitHub.
 
 Third Party Content
 -------------------

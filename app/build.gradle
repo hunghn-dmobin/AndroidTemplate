@@ -22,17 +22,17 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 apply plugin: "org.jetbrains.kotlin.plugin.parcelize"
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
+    compileSdk rootProject.compileSdkVersion
     buildFeatures {
         dataBinding true
     }
     defaultConfig {
-        applicationId "com.google.samples.apps.sunflower"
+        applicationId "appsgenz.template"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        testInstrumentationRunner "com.google.samples.apps.sunflower.utilities.MainTestRunner"
+        testInstrumentationRunner "appsgenz.template.utilities.MainTestRunner"
         versionCode 1
-        versionName "0.1.6"
+        versionName "1.0"
         vectorDrawables.useSupportLibrary true
 
         // Consult the README on instructions for setting up Unsplash API key
