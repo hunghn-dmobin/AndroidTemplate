@@ -9,15 +9,16 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import appsgenz.template.R
+import appsgenz.template.adapters.AppListAdapter
 import appsgenz.template.data.entities.PlantAndGardenPlantings
 import appsgenz.template.databinding.ListItemGardenPlantingBinding
 import appsgenz.template.screens.home.HomeViewPagerFragmentDirections
 
-class GardenPlantingAdapter :
-    ListAdapter<PlantAndGardenPlantings, GardenPlantingAdapter.ViewHolder>(
-        GardenPlantDiffCallback()
-    ) {
 
+class GardenPlantingAdapter(
+) : AppListAdapter<PlantAndGardenPlantings, GardenPlantingAdapter.ViewHolder>(
+    GardenPlantDiffCallback()
+) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             DataBindingUtil.inflate(
