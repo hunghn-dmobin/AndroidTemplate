@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.plant
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,10 +25,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import appsgenz.template.R
-import appsgenz.template.adapters.PlantAdapter
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentPlantListBinding
-import appsgenz.template.viewmodels.PlantListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

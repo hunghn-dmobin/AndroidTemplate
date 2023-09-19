@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.plant_detail
 
 import android.content.Intent
 import android.os.Bundle
@@ -32,8 +32,8 @@ import appsgenz.template.R
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.data.entities.Plant
 import appsgenz.template.databinding.FragmentPlantDetailBinding
-import appsgenz.template.screens.PlantDetailFragment.Callback
-import appsgenz.template.viewmodels.PlantDetailViewModel
+import appsgenz.template.screens.plant_detail.PlantDetailFragment.Callback
+import appsgenz.template.screens.plant_detail.PlantDetailViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint

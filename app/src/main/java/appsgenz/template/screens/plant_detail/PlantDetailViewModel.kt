@@ -14,14 +14,13 @@
  * limitations under the License.
  */
 
-package appsgenz.template.viewmodels
+package appsgenz.template.screens.plant_detail
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import appsgenz.template.BuildConfig
-import appsgenz.template.screens.PlantDetailFragment
 import appsgenz.template.data.repositories.GardenPlantingRepository
 import appsgenz.template.data.repositories.PlantRepository
 import dagger.hilt.android.lifecycle.HiltViewModel

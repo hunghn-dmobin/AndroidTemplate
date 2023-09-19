@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.viewmodels
+package appsgenz.template.screens.garden
 
 import appsgenz.template.data.entities.PlantAndGardenPlantings
 import java.text.SimpleDateFormat

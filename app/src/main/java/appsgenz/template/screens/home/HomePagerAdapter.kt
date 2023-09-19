@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package appsgenz.template.adapters
+package appsgenz.template.screens.home
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import appsgenz.template.screens.GardenFragment
-import appsgenz.template.screens.PlantListFragment
+import appsgenz.template.screens.garden.GardenFragment
+import appsgenz.template.screens.plant.PlantListFragment
 
 const val MY_GARDEN_PAGE_INDEX = 0
 const val PLANT_LIST_PAGE_INDEX = 1

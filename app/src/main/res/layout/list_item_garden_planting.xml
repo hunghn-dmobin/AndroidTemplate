@@ -24,7 +24,7 @@
             type="android.view.View.OnClickListener"/>
         <variable
             name="viewModel"
-            type="appsgenz.template.viewmodels.PlantAndGardenPlantingsViewModel"/>
+            type="appsgenz.template.screens.garden.PlantAndGardenPlantingsViewModel"/>
     </data>
 
     <appsgenz.template.views.MaskedCardView

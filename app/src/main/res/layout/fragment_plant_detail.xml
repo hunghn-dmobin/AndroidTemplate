@@ -22,10 +22,10 @@
         <import type="appsgenz.template.data.entities.Plant"/>
         <variable
             name="viewModel"
-            type="appsgenz.template.viewmodels.PlantDetailViewModel" />
+            type="appsgenz.template.screens.plant_detail.PlantDetailViewModel" />
         <variable
             name="callback"
-            type="appsgenz.template.screens.PlantDetailFragment.Callback" />
+            type="appsgenz.template.screens.plant_detail.PlantDetailFragment.Callback" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

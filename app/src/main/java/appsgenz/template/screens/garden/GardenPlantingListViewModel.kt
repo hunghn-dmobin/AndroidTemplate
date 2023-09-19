@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.viewmodels
+package appsgenz.template.screens.garden
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

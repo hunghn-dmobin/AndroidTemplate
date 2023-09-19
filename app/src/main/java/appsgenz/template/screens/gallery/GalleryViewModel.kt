@@ -14,26 +14,30 @@
  * limitations under the License.
  */
 
-package appsgenz.template.viewmodels
+package appsgenz.template.screens.gallery
 
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import androidx.paging.PagingData
+import androidx.paging.cachedIn
 import appsgenz.template.data.models.UnsplashPhoto
+import appsgenz.template.data.repositories.UnsplashRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
-import appsgenz.template.screens.PhotoViewFragment
 
-/**
- * The ViewModel used in [PhotoViewFragment].
- */
 @HiltViewModel
-class PhotoViewModel @Inject constructor(
-    savedStateHandle: SavedStateHandle
+class GalleryViewModel @Inject constructor(
+    private val repository: UnsplashRepository
 ) : ViewModel() {
+    private var currentQueryValue: String? = null
+    private var currentSearchResult: Flow<PagingData<UnsplashPhoto>>? = null
 
-    val photo: UnsplashPhoto = savedStateHandle.get<UnsplashPhoto>(PHOTO_SAVED_STATE_KEY)!!
-
-    companion object {
-        private const val PHOTO_SAVED_STATE_KEY = "photoKey"
+    fun searchPictures(queryString: String): Flow<PagingData<UnsplashPhoto>> {
+        currentQueryValue = queryString
+        val newResult: Flow<PagingData<UnsplashPhoto>> =
+            repository.getSearchResultStream(queryString).cachedIn(viewModelScope)
+        currentSearchResult = newResult
+        return newResult
     }
 }

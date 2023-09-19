@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,9 +22,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import appsgenz.template.R
-import appsgenz.template.adapters.MY_GARDEN_PAGE_INDEX
-import appsgenz.template.adapters.PLANT_LIST_PAGE_INDEX
-import appsgenz.template.adapters.SunflowerPagerAdapter
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentViewPagerBinding
 import com.google.android.material.tabs.TabLayoutMediator

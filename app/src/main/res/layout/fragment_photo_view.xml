@@ -22,7 +22,7 @@
         <import type="appsgenz.template.data.models.UnsplashPhoto"/>
         <variable
             name="viewModel"
-            type="appsgenz.template.viewmodels.PhotoViewModel" />
+            type="appsgenz.template.screens.photo.PhotoViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

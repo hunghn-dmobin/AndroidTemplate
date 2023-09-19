@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.photo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -39,7 +39,6 @@ import appsgenz.template.transitions.SharedFade
 import appsgenz.template.utilities.FAST_OUT_SLOW_IN
 import appsgenz.template.utilities.plusAssign
 import appsgenz.template.utilities.transitionTogether
-import appsgenz.template.viewmodels.PhotoViewModel
 
 class PhotoViewFragment : Fragment() {
 

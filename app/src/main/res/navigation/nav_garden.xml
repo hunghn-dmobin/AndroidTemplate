@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/view_pager_fragment"
-        android:name="appsgenz.template.screens.HomeViewPagerFragment"
+        android:name="appsgenz.template.screens.home.HomeViewPagerFragment"
         tools:layout="@layout/fragment_view_pager">
 
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/plant_detail_fragment"
-        android:name="appsgenz.template.screens.PlantDetailFragment"
+        android:name="appsgenz.template.screens.plant_detail.PlantDetailFragment"
         android:label="@string/plant_details_title"
         tools:layout="@layout/fragment_plant_detail">
 
@@ -54,7 +54,7 @@
 
     <fragment
         android:id="@+id/gallery_fragment"
-        android:name="appsgenz.template.screens.GalleryFragment"
+        android:name="appsgenz.template.screens.gallery.GalleryFragment"
         android:label="@string/plant_details_title"
         tools:layout="@layout/fragment_gallery">
         <argument
@@ -66,7 +66,7 @@
     </fragment>
     <fragment
         android:id="@+id/photo_view_fragment"
-        android:name="appsgenz.template.screens.PhotoViewFragment"
+        android:name="appsgenz.template.screens.photo.PhotoViewFragment"
         android:label="@string/galley_detail"
         tools:layout="@layout/fragment_photo_view">
         <argument

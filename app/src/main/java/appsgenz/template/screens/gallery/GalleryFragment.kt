@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.gallery
 
 import android.os.Bundle
 import android.view.Gravity
@@ -30,14 +30,12 @@ import androidx.transition.Slide
 import appsgenz.template.LARGE_COLLAPSE_DURATION
 import appsgenz.template.LARGE_EXPAND_DURATION
 import appsgenz.template.R
-import appsgenz.template.adapters.GalleryAdapter
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentGalleryBinding
 import appsgenz.template.utilities.FAST_OUT_LINEAR_IN
 import appsgenz.template.utilities.LINEAR_OUT_SLOW_IN
 import appsgenz.template.utilities.plusAssign
 import appsgenz.template.utilities.transitionTogether
-import appsgenz.template.viewmodels.GalleryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.collectLatest

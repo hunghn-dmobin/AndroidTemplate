@@ -24,6 +24,7 @@ import appsgenz.template.MainCoroutineRule
 import appsgenz.template.data.AppDatabase
 import appsgenz.template.data.repositories.GardenPlantingRepository
 import appsgenz.template.data.repositories.PlantRepository
+import appsgenz.template.screens.plant_detail.PlantDetailViewModel
 import appsgenz.template.utilities.getValue
 import appsgenz.template.utilities.testPlant
 import dagger.hilt.android.testing.HiltAndroidRule

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package appsgenz.template.screens
+package appsgenz.template.screens.garden
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,11 +23,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.viewpager2.widget.ViewPager2
 import appsgenz.template.R
-import appsgenz.template.adapters.GardenPlantingAdapter
-import appsgenz.template.adapters.PLANT_LIST_PAGE_INDEX
+import appsgenz.template.screens.home.PLANT_LIST_PAGE_INDEX
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentGardenBinding
-import appsgenz.template.viewmodels.GardenPlantingListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
