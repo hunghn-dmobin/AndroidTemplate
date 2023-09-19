@@ -3,7 +3,11 @@ package appsgenz.template.base
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import androidx.annotation.CallSuper
+import androidx.annotation.LayoutRes
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
@@ -23,6 +27,9 @@ abstract class BaseAppFragment : Fragment(), OnActionInDialogListener {
     protected open val progressView: View?
         get() = (activity as? BaseAppActivity)?.progressView
 
+    @get:LayoutRes
+    abstract val layoutRes: Int
+
     init {
         arguments = Bundle()
     }
@@ -34,6 +41,20 @@ abstract class BaseAppFragment : Fragment(), OnActionInDialogListener {
             onHandleFragmentResult(requestKey, bundle)
             // Do something with the result.
         }
+    }
+
+    /**
+     * Shouldn't override this function...Use [.getLayoutRes]
+     */
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        var view = super.onCreateView(inflater, container, savedInstanceState)
+        if (layoutRes != 0) {
+            view = inflater.inflate(layoutRes, container, false)
+        }
+        return view
     }
 
     open fun onBack(): Boolean {

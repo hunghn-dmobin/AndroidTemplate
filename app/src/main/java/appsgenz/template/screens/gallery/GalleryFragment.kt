@@ -30,6 +30,7 @@ import androidx.transition.Slide
 import appsgenz.template.LARGE_COLLAPSE_DURATION
 import appsgenz.template.LARGE_EXPAND_DURATION
 import appsgenz.template.R
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentGalleryBinding
 import appsgenz.template.utilities.FAST_OUT_LINEAR_IN
@@ -43,7 +44,10 @@ import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 @AndroidEntryPoint
-class GalleryFragment : BaseAppFragment() {
+class GalleryFragment : BaseAppBindingFragment<FragmentGalleryBinding>() {
+
+    override val layoutRes: Int
+        get() = R.layout.fragment_gallery
 
     private val adapter = GalleryAdapter()
 
@@ -90,22 +94,13 @@ class GalleryFragment : BaseAppFragment() {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding = FragmentGalleryBinding.inflate(inflater, container, false)
-        context ?: return binding.root
-
+    override fun onBindingView(viewBinding: FragmentGalleryBinding) {
         binding.photoList.adapter = adapter
         search(args.plantName)
 
         binding.toolbar.setNavigationOnClickListener { view ->
             view.findNavController().navigateUp()
         }
-
-        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

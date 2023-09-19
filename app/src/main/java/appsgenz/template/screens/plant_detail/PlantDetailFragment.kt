@@ -17,23 +17,17 @@
 package appsgenz.template.screens.plant_detail
 
 import android.content.Intent
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.app.ShareCompat
 import androidx.core.widget.NestedScrollView
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import appsgenz.template.R
-import appsgenz.template.base.BaseAppFragment
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.data.entities.Plant
 import appsgenz.template.databinding.FragmentPlantDetailBinding
 import appsgenz.template.screens.plant_detail.PlantDetailFragment.Callback
-import appsgenz.template.screens.plant_detail.PlantDetailViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
@@ -42,22 +36,15 @@ import dagger.hilt.android.AndroidEntryPoint
  * A fragment representing a single Plant detail screen.
  */
 @AndroidEntryPoint
-class PlantDetailFragment : BaseAppFragment() {
+class PlantDetailFragment : BaseAppBindingFragment<FragmentPlantDetailBinding>() {
+
+    override val layoutRes: Int
+        get() = R.layout.fragment_plant_detail
 
     private val plantDetailViewModel: PlantDetailViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-
-        val binding = DataBindingUtil.inflate<FragmentPlantDetailBinding>(
-            inflater,
-            R.layout.fragment_plant_detail,
-            container,
-            false
-        ).apply {
+    override fun onBindingView(viewBinding: FragmentPlantDetailBinding) {
+        binding.apply {
             viewModel = plantDetailViewModel
             lifecycleOwner = viewLifecycleOwner
             callback = Callback { plant ->
@@ -110,8 +97,6 @@ class PlantDetailFragment : BaseAppFragment() {
             }
         }
         setHasOptionsMenu(true)
-
-        return binding.root
     }
 
     private fun navigateToGallery() {

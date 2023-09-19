@@ -25,29 +25,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import appsgenz.template.R
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.base.BaseAppFragment
 import appsgenz.template.databinding.FragmentPlantListBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class PlantListFragment : BaseAppFragment() {
+class PlantListFragment : BaseAppBindingFragment<FragmentPlantListBinding>() {
+
+    override val layoutRes: Int
+        get() = R.layout.fragment_plant_list
 
     private val viewModel: PlantListViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding = FragmentPlantListBinding.inflate(inflater, container, false)
-        context ?: return binding.root
-
+    override fun onBindingView(viewBinding: FragmentPlantListBinding) {
         val adapter = PlantAdapter()
         binding.plantList.adapter = adapter
         subscribeUi(adapter)
 
         setHasOptionsMenu(true)
-        return binding.root
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

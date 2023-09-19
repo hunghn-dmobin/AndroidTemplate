@@ -16,31 +16,23 @@
 
 package appsgenz.template.screens.garden
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.viewpager2.widget.ViewPager2
 import appsgenz.template.R
-import appsgenz.template.screens.home.PLANT_LIST_PAGE_INDEX
-import appsgenz.template.base.BaseAppFragment
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.databinding.FragmentGardenBinding
+import appsgenz.template.screens.home.PLANT_LIST_PAGE_INDEX
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class GardenFragment : BaseAppFragment() {
+class GardenFragment : BaseAppBindingFragment<FragmentGardenBinding>() {
 
-    private lateinit var binding: FragmentGardenBinding
+    override val layoutRes: Int
+        get() = R.layout.fragment_garden
 
     private val viewModel: GardenPlantingListViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentGardenBinding.inflate(inflater, container, false)
+    override fun onBindingView(viewBinding: FragmentGardenBinding) {
         val adapter = GardenPlantingAdapter()
         binding.gardenList.adapter = adapter
 
@@ -49,7 +41,6 @@ class GardenFragment : BaseAppFragment() {
         }
 
         subscribeUi(adapter, binding)
-        return binding.root
     }
 
     private fun subscribeUi(adapter: GardenPlantingAdapter, binding: FragmentGardenBinding) {

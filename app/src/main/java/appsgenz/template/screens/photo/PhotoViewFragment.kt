@@ -34,18 +34,22 @@ import androidx.transition.Transition
 import appsgenz.template.LARGE_COLLAPSE_DURATION
 import appsgenz.template.LARGE_EXPAND_DURATION
 import appsgenz.template.R
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.databinding.FragmentPhotoViewBinding
 import appsgenz.template.transitions.SharedFade
 import appsgenz.template.utilities.FAST_OUT_SLOW_IN
 import appsgenz.template.utilities.plusAssign
 import appsgenz.template.utilities.transitionTogether
 
-class PhotoViewFragment : Fragment() {
+class PhotoViewFragment : BaseAppBindingFragment<FragmentPhotoViewBinding>() {
 
     companion object {
         const val TRANSITION_NAME_IMAGE = "image"
         const val TRANSITION_NAME_NAME = "name"
     }
+
+    override val layoutRes: Int
+        get() = R.layout.fragment_photo_view
 
     private val photoViewModel: PhotoViewModel by viewModels()
 
@@ -66,21 +70,10 @@ class PhotoViewFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding = DataBindingUtil.inflate<FragmentPhotoViewBinding>(
-            inflater,
-            R.layout.fragment_photo_view,
-            container,
-            false
-        ).apply {
-//            postponeEnterTransition(500L, TimeUnit.MILLISECONDS)
-
-            val name: TextView =  root.findViewById(R.id.photographer)
-            val image: ImageView =  root.findViewById(R.id.plant_photo)
+    override fun onBindingView(viewBinding: FragmentPhotoViewBinding) {
+        binding.apply {
+            val name: TextView = root.findViewById(R.id.photographer)
+            val image: ImageView = root.findViewById(R.id.plant_photo)
 
             // Transition names. Note that they don't need to match with the names of the selected grid
             // item. They only have to be unique in this fragment.
@@ -93,8 +86,6 @@ class PhotoViewFragment : Fragment() {
             toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
-
         }
-        return binding.root
     }
 }

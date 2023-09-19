@@ -16,26 +16,20 @@
 
 package appsgenz.template.screens.home
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import appsgenz.template.R
-import appsgenz.template.base.BaseAppFragment
+import appsgenz.template.base.BaseAppBindingFragment
 import appsgenz.template.databinding.FragmentViewPagerBinding
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeViewPagerFragment : BaseAppFragment() {
+class HomeViewPagerFragment : BaseAppBindingFragment<FragmentViewPagerBinding>() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
+    override val layoutRes: Int
+        get() = R.layout.fragment_view_pager
+
+    override fun onBindingView(viewBinding: FragmentViewPagerBinding) {
         val tabLayout = binding.tabs
         val viewPager = binding.viewPager
 
@@ -48,8 +42,6 @@ class HomeViewPagerFragment : BaseAppFragment() {
         }.attach()
 
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
-
-        return binding.root
     }
 
     private fun getTabIcon(position: Int): Int {
